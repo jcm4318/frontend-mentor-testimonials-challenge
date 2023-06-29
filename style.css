@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Barlow Semi Condensed";
+    font-size: 16px;
+  }
+
+  body {
+    background-color: hsl(210, 46%, 95%);
+  }
+
+.container {
+    padding: 5% 3%;
+}
+
+.card {
+    border-bottom-left-radius: 22px;
+    border-top-right-radius: 22px;
+    margin: 16px;
+    padding: 26px;
+    box-shadow: 10px 10px 18px -1px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 0;
+}
+
+#card-dc  {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+#card-jw {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+#card-jh {
+    background-color: white;
+}
+
+#card-kw {
+    background-color: white;
+}
+
+#card-pa {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.banner img {
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    height: 46px;
+}
+
+#profile-pic-pa {
+    border-color: hsl(263, 55%, 52%);
+}
+
+.profile {
+    margin-left: 16px;
+}
+
+h2 {
+    opacity: 0.6;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    z-index: 3;
+    position: relative;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.7;
+    line-height: 1.5;
+}
+
+#quote {
+    position: absolute;
+    scale: 120%;
+    right: 10%;
+    top: -5px;
+    z-index: 1;
+    
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    
+    #flex-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #flex-left-top {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #flex-left-bottom {
+        display: flex;
+    }
+
+    #card-dc {
+        flex-basis: 67%;
+    }
+
+    #card-jw {
+        flex-basis: 33%;
+    }
+
+    #card-pa {
+        flex-basis: 67%;
+    }
+
+    #card-jh {
+        flex-basis: 33%;
+    }
+
+}
+
+@media (min-width: 990px) {
+
+    .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    #card-kw {
+        flex-basis: 25%;
+    }
+
+    #flex-left {
+        flex-basis: 75%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.profile {
+    color: white;
+}
+#card-dc .header {
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+}
+#card-dc .body {
+    color: white;
+    opacity: 0.6;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+*/
